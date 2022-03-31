@@ -7,7 +7,7 @@ Thank You! :)
 
 Thanks for downloading this template. "Corporate 1" is my first all-purpose business landing web template. Responsive, clean, with a professional look, and with a sleek design that'll satisfy all your needs, whether if you are looking for a basis design, or just a simple and static web. All parts are nested in "divs", and is section-separated with html comments in between.
 
-You will need basic HTML, SASS/SCSS, and BOOTSTRAP CSS skills to edit "Corporate 1". I will try to help you out with this documentation. But If I fail here, you can always contact me on ​i​nfo@bryanquiroz.com and try to solve your issue.
+You will need basic HTML, SASS/SCSS, and BOOTSTRAP CSS skills to edit "Corporate 1". I will try to help you out with this documentation. But If I fail here, you can always contact me on info@bryanquiroz.com and try to solve your issue.
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------
