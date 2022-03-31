@@ -1,0 +1,206 @@
+// Custom.scss
+$body-bg: #FFF8E7;
+$theme-colors: (
+    "primary": #00C9AA,
+    "info": #00755E,
+    "dark": #4B4639,
+    "light": #fff,
+);
+$navbar-light-color: #fff;
+$font-family-sans-serif: 'Nunito', sans-serif;
+$headings-font-family: 'Nunito', sans-serif;
+$input-placeholder-color: white;
+$border-color: #00C9AA;
+// Include any default variable overrides here (though functions won't be available)
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@900;700;600;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600&display=swap');
+// Add additional custom code here
+
+/* Back-to-top button */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* Basic Info container */
+.info-icons {
+    width: 100px;
+    height: auto;
+    fill: white;
+}
+
+.briefcase {
+    width: 200px;
+    opacity: 50%;
+}
+
+  /* Gallery squares */
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+  }
+
+  .hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  
+  .hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .hover-content {
+    position: relative;
+    z-index: 99;
+  }
+  .hover-2 .hover-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+  }
+  
+  .hover-2-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  
+  .hover-2-description {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    text-align: center;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  
+  .hover-2:hover .hover-2-title {
+    transform: translateY(-1.5rem);
+  }
+  
+  .hover-2:hover .hover-2-description {
+    bottom: 0.5rem;
+    opacity: 1;
+  }
+  
+  .hover-2:hover .hover-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  }
+  
+/* Tables of prices, plans & work team */
+.card {
+  border:none;
+  padding: 10px 30px;
+}
+
+.card::after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+
+
+  transform: scale(1.02, 1.02);
+  transition-duration: 0.3s;
+  -webkit-transform: scale(1.02, 1.02);
+  backface-visibility: hidden; 
+  will-change: transform;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.75) !important;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.bg-image {
+  background-image: url("https://fakeimg.pl/4000x2250/?text=Hello-World!"); 
+  background-position: center; 
+  background-size: cover;
+}
+
+/* CEO part */ 
+.quote {
+  background-image: url("./icons/quote.svg");
+  background-position: center;
+  background-size: 250px;
+  opacity: 75%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.ceo {
+    border:none;
+    padding: none;
+}
+
+.ceo:hover {
+
+  transform: translate(-20px, -20px);
+  transition-duration: 0.3s;
+  backface-visibility: hidden; 
+  will-change: transform;
+  box-shadow: 1rem 1rem #00C9AA  !important;
+}
+
+/*Our team */
+.team-img {
+  border-radius: 100px;
+}
+
+/* Contact Info */
+.rectangle {
+position: absolute;
+width: 97px;
+height: 22px;
+background: #FFFFFF;
+}
+
+.placeholder-info {
+  border-color: white; 
+  border-width: 1px;
+}
+
+.social-media {
+  border:none;
+}
+
+.social-media::after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.social-media:hover {
+  cursor: pointer;
+  transform: scale(1.50, 1.50);
+  transition-duration: 0.3s;
+  -webkit-transform: scale(1.50, 1.50);
+  backface-visibility: hidden; 
+  will-change: transform;
+}

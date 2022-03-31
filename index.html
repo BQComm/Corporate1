@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="bryanquiroz.com">
+    <!-- Fav Icon of the page -->
+    <link rel="shortcut icon" type="image/png" href="./icons/logo.png">
+    <title>Corporate 1</title>
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="./main.css">
+        <!-- Main JS -->
+        <script src="./main.js" defer></script>
+        <!-- Bootstrap JS -->
+        <script type='text/javascript' src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@900;700;600;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- navbar -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+          <a href="index.html"><img src="./icons/logo.png" alt="Logo Image" class="navbar-brand"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center fw-bold">
+              <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+              <li class="nav-item"><a href="#brands" class="nav-link">Portfolio</a></li>
+              <li class="nav-item"><a href="#news" class="nav-link">News</a></li>
+              <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+              <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+           </ul>
+          </div>
+        </div>
+      </nav>
+      </header>
+<!-- Back-to-top button -->
+<button type="button" class="btn btn-primary btn-floating btn-lg shadow-lg" id="btn-back-to-top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+  </svg>
+</button>
+<!-- Carousel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://fakeimg.pl/1280x720/?text=1280x720" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block position-absolute bottom-20 start-50 translate-middle text-primary">
+        <h1>First slide label</h1>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="https://fakeimg.pl/1280x720/?text=1280x720" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block position-absolute bottom-20 start-50 translate-middle text-primary">
+        <h1>Second slide label</h1>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="https://fakeimg.pl/1280x720/?text=1280x720" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block position-absolute bottom-20 start-50 translate-middle text-primary">
+        <h1>Third slide label</h1>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Basic Info Container -->
+<div class="container bg-primary p-4" style="--bs-columns: 2; row-gap: 0;" id="services">
+  <div class="row">
+    <div class="col-6 p-3 text-light">
+      <img class="briefcase" src="./icons/briefcase.svg" alt="">
+      <h1 class="mb-3 fw-bold">Our business is Bussin’!</h1>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+    </div>
+    <div class="col-6 p-3 text-light">
+       <div class="row py-5">
+         <img class="col-2 info-icons" src="./icons/award.svg" alt="">
+        <h5 class="col pt-3 center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+       </div>
+       <div class="row py-5">
+        <img class="col-2 info-icons" src="./icons/chat-dots.svg" alt="">
+       <h5 class="col pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+      </div>
+      <div class="row py-5">
+        <img class="col-2 info-icons" src="./icons/graph-up-arrow.svg" alt="">
+       <h5 class="col pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!-- Brands -->
+<div class="container bg-light py-3" id="brands">
+  <h2 class = "text-center pb-4">Brands that believe in us</h2>
+  <div class="row justify-content-center pb-2">
+    <div class="col d-flex justify-content-center"><img src="./icons/emoji-smile.svg"class="img-fluid" alt="" alt=""></div>
+    <div class="col d-flex justify-content-center"><img src="./icons/emoji-smile.svg" class="img-fluid" alt="" alt=""></div>
+    <div class="col d-flex justify-content-center"><img src="./icons/emoji-smile.svg" class="img-fluid" alt="" alt=""></div>
+    <div class="col d-flex justify-content-center"><img src="./icons/emoji-smile.svg" class="img-fluid" alt="" alt=""></div>
+    <div class="col d-flex justify-content-center"><img src="./icons/emoji-smile.svg" class="img-fluid" alt="" alt=""></div>
+    <div class="col d-flex justify-content-center"><img src="./icons/emoji-smile.svg" class="img-fluid" alt="" alt=""></div>
+    <div class="col d-flex justify-content-center"><img src="./icons/emoji-smile.svg" class="img-fluid" alt="" alt=""></div>
+  </div>
+</div>
+<!-- Portfolio -->
+<br>
+<h2 class = "text-center text-primary py-4 fw-bold" id="news"><strong>Our projects</strong></h2>
+<div class="container py-4">
+  <div class="row">
+    <div class="col-lg-6 mb-3 mb-lg-0"><a href="./blog.html">
+      <div class="hover hover-2 text-light"><img src="https://fakeimg.pl/500x350/?text=500x350" alt="">
+        <div class="hover-overlay"></div>
+        <div class="hover-2-content px-5 py-4">
+          <h3 class="hover-2-title font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+          <p class="hover-2-description mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-lg-6 mb-3 mb-lg-0"><a href="./blog.html">
+      <div class="hover hover-2 text-light"><img src="https://fakeimg.pl/500x350/?text=500x350" alt="">
+        <div class="hover-overlay"></div>
+        <div class="hover-2-content px-5 py-4">
+          <h3 class="hover-2-title font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+          <p class="hover-2-description mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-lg-6 mb-3 mb-lg-0"><a href="./blog.html">
+      <div class="hover hover-2 text-light"><img src="https://fakeimg.pl/500x350/?text=500x350" alt="">
+        <div class="hover-overlay"></div>
+        <div class="hover-2-content px-5 py-4">
+          <h3 class="hover-2-title font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+          <p class="hover-2-description mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-lg-6 mb-3 mb-lg-0"><a href="./blog.html">
+      <div class="hover hover-2 text-light"><img src="https://fakeimg.pl/500x350/?text=500x350" alt="">
+        <div class="hover-overlay"></div>
+        <div class="hover-2-content px-5 py-4">
+          <h3 class="hover-2-title font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+          <p class="hover-2-description mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-lg-6 mb-3 mb-lg-0"><a href="./blog.html">
+      <div class="hover hover-2 text-light"><img src="https://fakeimg.pl/500x350/?text=-500x350" alt="">
+        <div class="hover-overlay"></div>
+        <div class="hover-2-content px-5 py-4">
+          <h3 class="hover-2-title font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+          <p class="hover-2-description mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-lg-6 mb-3 mb-lg-0"><a href="./blog.html">
+      <div class="hover hover-2 text-light"><img src="https://fakeimg.pl/500x350/?text=500x350" alt="">
+        <div class="hover-overlay"></div>
+        <div class="hover-2-content px-5 py-4">
+          <h3 class="hover-2-title font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
+          <p class="hover-2-description mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-12 d-flex justify-content-around p-4"><a href="#"><button type="button" class="btn btn-info p-3">READ MORE</button></a></div>
+  </div>
+</div>
+<br>
+<!-- Plans and pricing -->
+<div class="container-fluid p-5 bg-image" id="pricing">
+  <h1 class = "text-center text-light fw-bold pb-5">Our plans and prices</h1>
+  <div class="row justify-content-md-center">
+    <div class="col-lg-4 col-md-auto">
+      <div class="card h-100 bg-primary">
+        <div class="card-body">
+          <div class="text-center p-3 text-light">
+            <h5 class="card-title">STARTER PLAN</h5>
+            <small>Individual</small>
+            <br><br>
+            <span class="h2">$99.99</span>/month
+            <br>
+            <h2 class="text-center">USD</h2>
+            <br>
+            <div class="card-body text-center">
+              <a href="./blog.html"><button class="btn btn-light text-primary p-3 font-weight-bold">SELECT</button></a>
+            </div>
+          </div>
+          <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush text-light">
+          <li class="list-group-item bg-primary text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Cras justo odio</li>
+          <li class="list-group-item bg-primary text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Dapibus ac facilisis in</li>
+          <li class="list-group-item bg-primary text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-auto">
+      <div class="card h-100 shadow-lg">
+        <div class="card-body text-primary">
+          <div class="text-center p-3">
+            <h5 class="card-title">STANDARD</h5>
+            <small>Small Business</small>
+            <br><br>
+            <span class="h2">$99.99</span>/month 
+            <br>
+            <h2 class="text-center">USD</h2>
+            <br>
+            <div class="card-body text-center">
+              <a href="./blog.html"><button class="btn btn-info p-3 font-weight-bold">SELECT</button></a>
+            </div>
+          </div>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Cras justo odio</li>
+          <li class="list-group-item text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Dapibus ac facilisis in</li>
+          <li class="list-group-item text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-auto">
+      <div class="card h-100 bg-primary">
+        <div class="card-body">
+          <div class="text-center p-3 text-light">
+            <h5 class="card-title">BUSINESS PLAN</h5>
+            <small>Corporate</small>
+            <br><br>
+            <span class="h2">$99.99</span>/month
+            <br>
+            <h2 class="text-center">USD</h2>
+            <br>
+            <div class="card-body text-center">
+              <a href="./blog.html"><button class="btn btn-light text-primary p-3 font-weight-bold">SELECT</button></a>
+            </div>
+          </div>
+          <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush text-light">
+          <li class="list-group-item bg-primary text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Cras justo odio</li>
+          <li class="list-group-item bg-primary text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Dapibus ac facilisis in</li>
+          <li class="list-group-item bg-primary text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg> Vestibulum at eros</li>
+        </ul>
+      </div>
+    </div>
+      </div>
+    </div>
+</div>
+</div>
+<!-- CEO part -->
+<div class="container p-5">
+  <div class="row">
+    <div class="col-6 d-flex align-items-center font-weight-bold text-info">
+      <figure>
+        <blockquote class="blockquote text-center quote fw-bolder" style="height: 150px;">
+          <cite title="Source Title">“Lorem ipsum dolor sit amet, consectetur adipiscing elit”.</cite>
+        </blockquote>
+        <figcaption class="blockquote-footer text-center text-info">
+          John Doe, CEO.
+        </figcaption>
+      </figure>
+    </div>
+    <div class="col-6 d-flex justify-content-center">
+      <img src="https://fakeimg.pl/334x334/?text=334x334" class="ceo" alt="">
+    </div>
+  </div>
+</div>
+<!-- Meet our team -->
+<div class="container-fluid bg-primary" id="team">
+  <h1 class="text-center fw-bold text-light p-3 m-4">Meet our team!</h1>
+</div>
+<div class="container p-5">
+  <div class="row justify-content-center">
+    <div class="col col-sm-3">
+      <div class="h-100 bg-primary">
+        <div class="card-body text-light">
+          <div class="text-center p-3">
+            <img src="https://fakeimg.pl/150x150/?text=150x150" class="team-img" alt="">
+            <br><br>
+            <h5 class="card-title fw-bold">John Doe</h5>
+            <small>SVP</small>
+            <br>
+          </div>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <small class="text-center fw-bold">My socials</small>
+        </div>
+        <div class="row justify-content-center py-2 mx-1">
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/whatsapp.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/facebook.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="col col-sm-3">
+      <div class="h-100 bg-primary">
+        <div class="card-body text-light">
+          <div class="text-center p-3">
+            <img src="https://fakeimg.pl/150x150/?text=150x150" class="team-img" alt="">
+            <br><br>
+            <h5 class="card-title fw-bold">John Doe</h5>
+            <small>SVP</small>
+            <br>
+          </div>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <small class="text-center fw-bold">My socials</small>
+        </div>
+        <div class="row justify-content-center py-2 mx-1">
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/whatsapp.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/facebook.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-sm-3">
+      <div class="h-100 bg-primary">
+        <div class="card-body text-light">
+          <div class="text-center p-3">
+            <img src="https://fakeimg.pl/150x150/?text=150x150" class="team-img" alt="">
+            <br><br>
+            <h5 class="card-title fw-bold">John Doe</h5>
+            <small>SVP</small>
+            <br>
+          </div>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <small class="text-center fw-bold">My socials</small>
+        </div>
+        <div class="row justify-content-center py-2 mx-1">
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/whatsapp.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/facebook.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-sm-3">
+      <div class="h-100 bg-primary">
+        <div class="card-body text-light">
+          <div class="text-center p-3">
+            <img src="https://fakeimg.pl/150x150/?text=150x150" class="team-img" alt="">
+            <br><br>
+            <h5 class="card-title fw-bold">John Doe</h5>
+            <small>SVP</small>
+            <br>
+          </div>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <small class="text-center fw-bold">My socials</small>
+        </div>
+        <div class="row justify-content-center py-2 mx-1">
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/whatsapp.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/facebook.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+          <div class="col">
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" class="w-50 p-1 mx-auto d-flex justify-content-center social-media" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</div>
+</div>
+<!-- Contact Info -->
+<div class="container-fluid bg-dark" style="--bs-columns: 2; row-gap: 0;" id="contact">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-md-4 justify-content-center mb-5 text-light">
+      <br><br><br><br><br><br>
+      <span class="rectangle"></span>
+      <br>
+      <h5 class="pt-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</h3>
+      <br><br>
+      <h5>Address: New York, NY, United States <br>
+        Phone: +1 234-567-890 <br>
+        Hours: 9:00 am – 5:00 pm</h3>
+    </div>
+    <div class="col-md-4 bg-primary text-light">
+      <br><br><br><br><br><br>
+      <h1 class="m-2">Let's Talk!</h1>
+      <form class="m-2" id="cf" name="cf" action="config.php" method="post">
+        <div class="mb-3">
+          <input type="email" placeholder="Email address" class="form-control text-light bg-primary placeholder-info" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <input type="text" placeholder="Subject" class="form-control text-light bg-primary placeholder-info" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <textarea placeholder="Message" class="form-control placeholder-info text-light bg-primary aria-label="></textarea>
+        </div>
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-primary text-light placeholder-info" onClick="SendMail()" value="SEND">SEND</button>
+          <br><br><br><br><br><br>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-info">
+<div class="container p-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="mb-3 text-light">
+        <h3>Subscribe to our Newsletter!</h3>
+        <input type="email" placeholder="Email" class="form-control bg-info text-light" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <br>
+        <button type="submit" onClick="SendMail()" value="SEND" class="btn btn-info p-2 text-light palceholder-info">SEND</button>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="col-md-6 text-light">
+      <h3>Follow us!</h3>
+      <br>
+      <div class="row p-1">
+        <div class="col col-sm-2 d-flex justify-content-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/whatsapp.svg" class="social-media w-50" alt=""></a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" class="social-media w-50" alt=""></a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/twitter.svg" class="social-media w-50" alt=""></a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/instagram.svg" class="social-media w-50" alt=""></a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/telegram.svg" class="social-media w-50" alt=""></a>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./icons/facebook.svg" class="social-media w-50" alt=""></a>
+        </div>
+      </div>
+      <br>
+      <small>© 2022 All Rights Reserved. - Corporate 1.</small>
+    </div>
+  </div>
+</div>
+</footer>
+</body>
+</html>
